@@ -1,7 +1,32 @@
 <!-- src/lib/components/starGrid.svelte -->
 
 <script>
+	import gsap from "gsap"
+	import {onMount} from "svelte"
+
 	const grid = [14, 30];
+	
+	onMount(()=>{
+		gsap.set(".star-grid-item " , {opacity:0 ,
+		transformOrigin:"center" , 
+		color:"#fff"
+	});
+
+
+
+
+		gsap.set("#star-grid" , {
+			opacity:1
+		})
+
+
+		const tl = gsap.timeline()
+	});
+
+
+
+
+
 </script>
 
 <svg
