@@ -1,0 +1,165 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content_aboutpage": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Our cutting-edge emotion recognition AI employs sophisticated algorithms to meticulously analyze vocal cues, effortlessly discerning a spectrum of emotional states. This application excels in delivering a comprehensive emotional analysis, offering valuable insights into individual emotions and overall sentiment. By harnessing advanced technology, our platform elevates the understanding of emotional nuances, providing users with a nuanced and insightful perspective on the emotional landscape. As pioneers in the field of emotion recognition, we are dedicated to offering a refined and insightful experience that goes beyond conventional boundaries.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"heading_aboutpage": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "About Us",
+							"spans": [
+								{
+									"type": "em",
+									"start": 0,
+									"end": 8
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"dev_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Incididunt culpa ad occaecat aliquip Lorem anim proident sit consequat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"dev_image",
+						{
+							"origin": {
+								"id": "-QOUBSKHvAM",
+								"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzOTYxODQ3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 4960,
+								"height": 3594
+							},
+							"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzOTYxODQ3fDA&ixlib=rb-4.0.3&q=85&rect=0%2C0%2C4960%2C3594&w=4960&h=3594",
+							"width": 4960,
+							"height": 3594,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": "orange fruits on blue ceramic bowl",
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"dev_name",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Slot 1 s",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"dev_name",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Item 2 ",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"dev_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Hello heloo",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"dev_image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzOTYxODQ3fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "orange fruits on blue ceramic bowl",
+							"origin": {
+								"id": "-QOUBSKHvAM",
+								"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzOTYxODQ3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 4960,
+								"height": 3594
+							},
+							"width": 4960,
+							"height": 3594,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]

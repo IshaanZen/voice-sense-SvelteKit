@@ -1,0 +1,226 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "The Power of \nUnsupervised Learning",
+							"spans": [
+								{
+									"type": "em",
+									"start": 3,
+									"end": 4
+								},
+								{
+									"type": "em",
+									"start": 14,
+									"end": 35
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Introducing New approach for Emotion Detection Dynamically using AI",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"bentobody",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Amet duis do quis officia consequat ut est laborum non ipsum. Est labore occaecat ullamco qui pariatur amet consectetur mollit consectetur ipsum amet sunt dolore ex sint."
+									}
+								}
+							]
+						}
+					],
+					[
+						"bemtoimage",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+								"width": 2545,
+								"height": 2545
+							},
+							"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+							"width": 2545,
+							"height": 2545,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"bentotitle",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Afternoon"
+									}
+								}
+							]
+						}
+					],
+					[
+						"bentoimage",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "orange fruits under blue sky during daytime",
+							"origin": {
+								"id": "eaOjEz8746k",
+								"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 5688,
+								"height": 3792
+							},
+							"width": 5688,
+							"height": 3792,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"bentotitle",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "bento 2 ",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"bentobody",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "hello",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"bemtoimage",
+						{
+							"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "orange fruits on blue ceramic bowl",
+							"origin": {
+								"id": "-QOUBSKHvAM",
+								"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 4960,
+								"height": 3594
+							},
+							"width": 4960,
+							"height": 3594,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"bentoimage",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "three sliced citrus oranges",
+							"origin": {
+								"id": "8Vh6ulKc50o",
+								"url": "https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEzNjExNjY3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 3020,
+								"height": 3775
+							},
+							"width": 3020,
+							"height": 3775,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					],
+					[
+						"iswide",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					]
+				]
+			}
+		]
+	}
+]

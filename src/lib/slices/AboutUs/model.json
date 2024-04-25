@@ -1,0 +1,64 @@
+{
+  "id": "about_us",
+  "type": "SharedSlice",
+  "name": "AboutUs",
+  "description": "AboutUs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading_aboutpage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading_AboutPage",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,strong,em"
+          }
+        },
+        "content_aboutpage": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content_AboutPage",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,embed"
+          }
+        }
+      },
+      "items": {
+        "dev_name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Dev_Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3"
+          }
+        },
+        "dev_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Dev_Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "dev_image": {
+          "type": "Image",
+          "config": {
+            "label": "Dev_image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}
