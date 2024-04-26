@@ -4,7 +4,7 @@
 	import gsap from "gsap"
 	import {onMount} from "svelte"
 
-	const grid = [14, 30];
+	const grid = [14 , 30];
 	
 	onMount(()=>{
 		gsap.set(".star-grid-item " , {opacity:0 ,
@@ -21,6 +21,92 @@
 
 
 		const tl = gsap.timeline()
+
+		// Enterance Transition 
+		tl.to(".star-grid-item" , {
+			// ease:"inOut" , 
+			delay:1,
+			keyframes:[
+				{
+					opacity:0 , 
+					duration:0
+				}  ,{
+					opacity:0.5,
+					rotate:"+=180" , 
+					color:"white",
+					scale:3.5,
+					duarion:1.5,
+
+					// Stagger
+					stagger: {
+						grid:grid , 
+						from: "center",
+						amount: 2, 
+						// each:1
+					}
+				} , {
+
+					opacity:0.3, 
+					rotate:"+=180" , 
+					color:"white",
+					scale:1,
+					delay:-2,
+					duarion:1,
+
+					//Stagger
+					stagger: {
+						grid:grid , 
+						from: "center",
+						amount: 2 , 
+						// each:1
+					}
+				}
+			]
+		})
+
+
+
+		// Loop Animations
+		tl.to(".star-grid-item" , {
+			delay:5,
+			repeat:-1,
+			repeatDelay:7,
+
+			keyframes:[
+				  {
+					opacity:0.4,
+					rotate:"+=180" , 
+					color:"#A78BFA",
+					scale:3,
+					duarion:0.6,
+					ease: "power1.inOut",
+
+					// Stagger
+					stagger: {
+						grid:grid , 
+						from: "center",
+						amount: 2 , 
+						// each:1
+					}
+				} , {
+
+					opacity:0.2, 
+					rotate:"+=180" , 
+					color:"#fff",
+					scale:1,
+					delay:-2,
+					duarion:0.6,
+
+					//Stagger
+					stagger: {
+						grid:grid , 
+						from: "center",
+						amount: 3 , 
+						// each:1
+					}
+				}
+			]
+		})
 	});
 
 

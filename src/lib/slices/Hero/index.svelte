@@ -18,20 +18,20 @@
 			const tl = gsap.timeline({defaults: {ease: 'power2.easeInOut'}})
 			
 			tl.fromTo(".Hero__Heading" , {scale:0.5} , {scale:1 , opacity:1 , duration:1});
-			tl.fromTo(".Hero__body" , {y:20} , {y:0 , opacity:1, duration:1} , "-=0.8");
+			tl.fromTo(".Hero__body" , {y:20} , {y:0 , opacity:1, duration:1} , "-=0.5");
 			tl.fromTo(".Hero__Button" , {scale:1.5} , {scale:1 , opacity:1, duration:1} , "-=0.7");	
 			tl.fromTo(".Hero__Image" , {y:100} , {y:0 , opacity:1, duration:1.2} , "+=0.2");	
-			tl.fromTo(".Hero__Glow" , {scale:0.5} , {scale:1 , opacity:1, duration:1.8} , "-=1");	
+			tl.fromTo(".Hero__Glow" , {scale:0.5} , {scale:1 , opacity:1, duration:1.5} , "-=1");	
 			
 			gsap.to(".Hero__Glow--one" , {ease:"power2.inOut" , 
 						repeat:-1 , 
 						repeatDelay:0 ,
 						keyframes:[
 							{top:"0%" , left:"33%", duration:0},
-							{top:"33%" , left:"33%", duration:2},
-							{top:"33%" , left:"0%", duration:3},
-							{top:"0%" , left:"0%", duration:2},
-							{top:"0%" , left:"33%", duration:3}
+							{top:"33%" , left:"33%", duration:3},
+							{top:"33%" , left:"0%", duration:4},
+							{top:"0%" , left:"0%", duration:3},
+							{top:"0%" , left:"33%", duration:4}
 						] })
 
 			gsap.to(".Hero__Glow--two" , {ease:"power2.inOut" , 
@@ -40,10 +40,10 @@
 						keyframes:[
 							
 							{top:"33%" , left:"0%", duration:0},
-							{top:"0%" , left:"0%", duration:2},
-							{top:"0%" , left:"33%", duration:3},
-							{top:"33%" , left:"33%", duration:2},
-							{top:"33%" , left:"0%", duration:3}
+							{top:"0%" , left:"0%", duration:3},
+							{top:"0%" , left:"33%", duration:4},
+							{top:"33%" , left:"33%", duration:3},
+							{top:"33%" , left:"0%", duration:4}
 						] })
 	})
 
@@ -55,7 +55,7 @@
 <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 
 	<div class="relative text-center ">
-		<StarGrid/>
+		<StarGrid />
 
 		{#if slice.primary.heading}
 			<h1 class=" Hero__Heading mx-auto max-w-3xl text-balance text-5xl font-medium md:text-7xl opacity-0">

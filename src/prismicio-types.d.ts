@@ -4,7 +4,12 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type PageDocumentDataSlicesSlice = AboutUsSlice | BentoBoxSlice | HeroSlice | RichTextSlice;
+type PageDocumentDataSlicesSlice =
+	| FeatureExtractionSlice
+	| AboutUsSlice
+	| BentoBoxSlice
+	| HeroSlice
+	| RichTextSlice;
 
 /**
  * Content for Page documents
@@ -367,6 +372,86 @@ type BentoBoxSliceVariation = BentoBoxSliceDefault;
 export type BentoBoxSlice = prismic.SharedSlice<'bento_box', BentoBoxSliceVariation>;
 
 /**
+ * Primary content in *FeatureExtraction → Primary*
+ */
+export interface FeatureExtractionSliceDefaultPrimary {
+	/**
+	 * Heading field in *FeatureExtraction → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: feature_extraction.primary.heading
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	heading: prismic.RichTextField;
+
+	/**
+	 * Body field in *FeatureExtraction → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: feature_extraction.primary.body
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	body: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *FeatureExtraction → Items*
+ */
+export interface FeatureExtractionSliceDefaultItem {
+	/**
+	 * Button_Label field in *FeatureExtraction → Items*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: feature_extraction.items[].button_label
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	button_label: prismic.RichTextField;
+
+	/**
+	 * Button_link field in *FeatureExtraction → Items*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: feature_extraction.items[].button_link
+	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 */
+	button_link: prismic.LinkField;
+}
+
+/**
+ * Default variation for FeatureExtraction Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeatureExtractionSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Simplify<FeatureExtractionSliceDefaultPrimary>,
+	Simplify<FeatureExtractionSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *FeatureExtraction*
+ */
+type FeatureExtractionSliceVariation = FeatureExtractionSliceDefault;
+
+/**
+ * FeatureExtraction Shared Slice
+ *
+ * - **API ID**: `feature_extraction`
+ * - **Description**: FeatureExtraction
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeatureExtractionSlice = prismic.SharedSlice<
+	'feature_extraction',
+	FeatureExtractionSliceVariation
+>;
+
+/**
  * Primary content in *Hero → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -517,6 +602,11 @@ declare module '@prismicio/client' {
 			BentoBoxSliceDefaultItem,
 			BentoBoxSliceVariation,
 			BentoBoxSliceDefault,
+			FeatureExtractionSlice,
+			FeatureExtractionSliceDefaultPrimary,
+			FeatureExtractionSliceDefaultItem,
+			FeatureExtractionSliceVariation,
+			FeatureExtractionSliceDefault,
 			HeroSlice,
 			HeroSliceDefaultPrimary,
 			HeroSliceVariation,

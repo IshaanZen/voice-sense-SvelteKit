@@ -7,6 +7,10 @@
 	import Initials from './Initials.svelte';
 	import clsx from 'clsx';
 
+	import gsap from "gsap"
+	import {onMount} from "svelte"
+
+
 	import CloseIcon from '~icons/ph/x-bold'
 	import MenuIcon from '~icons/ph/list-bold'
 	import { asLink } from '@prismicio/client';
@@ -29,13 +33,24 @@
 	const isActive = (link)=>{
 		const path = asLink(link) ; 
 		
-		return path && $page.url.pathname.includes(path)
+		return path && $page.url.pathname.includes(path)	
 		
 	}
 
+
+	onMount(()=>{
+		gsap.fromTo("header" , 
+			{y:-100} , {
+				y:0,
+				duration:0.6,
+				opacity:1
+			}
+	)
+	})
+
 </script>
 
-<header class="p4 md:p-6">
+<header class="p4 md:p-6 opacity-0">
 	<nav
 		class="mx-auto flex max-w-6xl flex-col justify-between py-2 px-5 font-medium text-white md:flex-row md:items-center "
 		aria-label="Header"
@@ -103,14 +118,14 @@
 			{#each settings.data.navigation as item (item.label)}
 				<li>
 					{#if item.cta_button}
-						<ButtonLinks field={item.link} 
+						<ButtonLinks field={item.link}
 						aria-current={isActive(item.link) ? 'page' : undefined}>
 							{item.label}
 							<svg
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 16 16"
-								class="a-icon--arrow-north-east400 a-icon--text a-icon--no-align f-ui-1 relative top-[0.05em] -mr-4 ml-2"
+								class="a-icon--arrow-north-east400 a-icon--text a-icon--no-align f-ui-1 relative top-[0.05em] -mr-4 ml-2  "
 								style="width:1em;height:1em;"
 								data-new=""
 								aria-hidden="true"
@@ -125,8 +140,11 @@
 					{:else}
 						<PrismicLink field={item.link} 
 						aria-current={isActive(item.link) ? 'page' : undefined} 
-						class="inline-flex min-h-11 items-center"
+
+						class=" min-h-11 items-center relative w-fit block after:block after:content-[''] after:absolute after:h-[3px]
+						after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left my-2 mx-5 cursor-pointer"
 							>{item.label}
+
 						</PrismicLink>
 					{/if}
 				</li>

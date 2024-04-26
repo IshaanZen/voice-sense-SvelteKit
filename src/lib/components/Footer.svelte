@@ -1,14 +1,27 @@
 <script>
 	import { PrismicLink } from "@prismicio/svelte";
 	import Initials from "./Initials.svelte";
+    import {onMount} from "svelte"
+    import gsap from "gsap";
 
 
 /** @type {import ("@prismicio/client").Content.SettingsDocument}*/  
     export let settings;
 
+
+    onMount(()=>{
+		gsap.fromTo(".footer__Class" , 
+			{y: 300} , {
+				y:0,
+				duration:0.6,
+				opacity:1
+			}
+	)
+	})
+
 </script>
 
-<header>
+<header class="footer__Class opacity-0">
     <nav class="flex flex-col items-center justify-between gap-6 border-t border-x-grey-600 px-8 py-7 md:flex-row " aria-label="Header">
         <a href="/">
             <Initials/>
