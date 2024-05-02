@@ -38,3 +38,17 @@ export const createClient = ({ cookies, ...config } = {}) => {
 
 	return client;
 };
+
+
+export const actions= {
+    // @ts-ignore
+   record : async({request} ) =>{
+    const data = await request.formData();
+    const file = data.get('audio-upload')
+    console.log(file)
+
+    return{
+        success:true
+    }
+   }
+}

@@ -5,7 +5,7 @@
 body {
 	font-family: 'Montserrat Variable', sans-serif;
 	background-image: url('/assets/noise-texture.svg');
-	@apply grid bg-gray-950 bg-repeat text-gray-50;
+	@apply grid bg-gray-950 bg-repeat text-white;
 }
 
 h1{

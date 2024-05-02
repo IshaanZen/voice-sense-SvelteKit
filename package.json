@@ -17,6 +17,7 @@
 		"@iconify-json/ph": "^1.1.12",
 		"@slicemachine/adapter-sveltekit": "^0.3.38",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-node": "^5.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@tailwindcss/typography": "^0.5.12",
@@ -47,6 +48,9 @@
 		"@prismicio/client": "^7.4.1",
 		"@prismicio/svelte": "^1.1.1",
 		"clsx": "^2.1.0",
-		"gsap": "^3.12.5"
+		"express": "^4.19.2",
+		"gsap": "^3.12.5",
+		"multer": "^1.4.5-lts.1",
+		"recorder-js": "^1.0.7"
 	}
 }

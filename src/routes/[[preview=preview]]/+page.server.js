@@ -2,6 +2,14 @@ import { asText } from '@prismicio/client';
 
 import { createClient } from '$lib/prismicio';
 
+// /** @type {import('./$types').Actions} */
+// export const actions = {	
+// 	default: async (event) => 
+// 	{		
+// 		// TODO log the user in	
+// }
+// };
+
 export async function load({ fetch, cookies }) {
 	const client = createClient({ fetch, cookies });
 
@@ -19,3 +27,4 @@ export async function load({ fetch, cookies }) {
 export function entries() {
 	return [{}];
 }
+
