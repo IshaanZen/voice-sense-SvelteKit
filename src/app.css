@@ -5,12 +5,30 @@
 body {
 	font-family: 'Montserrat Variable', sans-serif;
 	background-image: url('/assets/noise-texture.svg');
-	@apply grid bg-gray-950 bg-repeat text-white;
+	@apply grid bg-[#FFF4E8] bg-repeat text-black;
+	overflow-x: hidden ;
 }
 
 h1{
-	font-family: 'Russo One', sans-serif;
+	/* font-family: 'Russo One', sans-serif; */
 
+}
+a , button{
+		font-family: 'Oswald Variable', sans-serif;
+		font-weight: 400;
+		font-stretch:extra-expanded;
+}
+
+.text-container{
+	z-index: 100;
+  position:absolute;
+  top: 30%;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  user-select: none;
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 
 .glass-container {
@@ -18,7 +36,7 @@ h1{
 }
 
 .glass-container::before {
-	@apply absolute -inset-[10px] -z-10 rounded-xl border border-gray-100/20 bg-gray-200/10 backdrop-blur-md;
+	@apply absolute -inset-[10px] -z-10 rounded-xl border border-gray-100/20 bg-gray-200/10 backdrop-blur-xl;
 	content: '';
 }
 

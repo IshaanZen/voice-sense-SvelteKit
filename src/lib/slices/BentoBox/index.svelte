@@ -16,7 +16,7 @@
 		components={{ em: HighlightedText, heading2: Heading2 }}
 	/>
 
-	<div class="mx-auto mt-6 max-w-md text-balance text-center text-white">
+	<div class="mx-auto mt-6 max-w-md text-balance text-center text-black">
 		<PrismicRichText field={slice.primary.body} />
 	</div>
 

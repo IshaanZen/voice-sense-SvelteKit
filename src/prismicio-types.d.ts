@@ -5,6 +5,8 @@ import type * as prismic from '@prismicio/client';
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type PageDocumentDataSlicesSlice =
+	| ResultsSlice
+	| DocumentationSlice
 	| FeatureExtractionSlice
 	| AboutUsSlice
 	| BentoBoxSlice
@@ -372,6 +374,93 @@ type BentoBoxSliceVariation = BentoBoxSliceDefault;
 export type BentoBoxSlice = prismic.SharedSlice<'bento_box', BentoBoxSliceVariation>;
 
 /**
+ * Primary content in *Documentation → Primary*
+ */
+export interface DocumentationSliceDefaultPrimary {
+	/**
+	 * Docs_Heading field in *Documentation → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: documentation.primary.docs_heading
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	docs_heading: prismic.RichTextField;
+
+	/**
+	 * Docs_Content field in *Documentation → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: documentation.primary.docs_content
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	docs_content: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Documentation → Items*
+ */
+export interface DocumentationSliceDefaultItem {
+	/**
+	 * Title field in *Documentation → Items*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: documentation.items[].title
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	title: prismic.RichTextField;
+
+	/**
+	 * Summary field in *Documentation → Items*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: documentation.items[].summary
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	summary: prismic.RichTextField;
+
+	/**
+	 * Diagrams field in *Documentation → Items*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: documentation.items[].diagrams
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	diagrams: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for Documentation Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type DocumentationSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Simplify<DocumentationSliceDefaultPrimary>,
+	Simplify<DocumentationSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Documentation*
+ */
+type DocumentationSliceVariation = DocumentationSliceDefault;
+
+/**
+ * Documentation Shared Slice
+ *
+ * - **API ID**: `documentation`
+ * - **Description**: Documentation
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type DocumentationSlice = prismic.SharedSlice<'documentation', DocumentationSliceVariation>;
+
+/**
  * Primary content in *FeatureExtraction → Primary*
  */
 export interface FeatureExtractionSliceDefaultPrimary {
@@ -534,6 +623,73 @@ type HeroSliceVariation = HeroSliceDefault;
 export type HeroSlice = prismic.SharedSlice<'hero', HeroSliceVariation>;
 
 /**
+ * Primary content in *Results → Primary*
+ */
+export interface ResultsSliceDefaultPrimary {
+	/**
+	 * Emotion field in *Results → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: results.primary.emotion
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	emotion: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Results → Items*
+ */
+export interface ResultsSliceDefaultItem {
+	/**
+	 * emo_ing field in *Results → Items*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: results.items[].emo_ing
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	emo_ing: prismic.ImageField<never>;
+
+	/**
+	 * emot_name field in *Results → Items*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: results.items[].emot_name
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	emot_name: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Results Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ResultsSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Simplify<ResultsSliceDefaultPrimary>,
+	Simplify<ResultsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Results*
+ */
+type ResultsSliceVariation = ResultsSliceDefault;
+
+/**
+ * Results Shared Slice
+ *
+ * - **API ID**: `results`
+ * - **Description**: Results
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ResultsSlice = prismic.SharedSlice<'results', ResultsSliceVariation>;
+
+/**
  * Primary content in *RichText → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -602,6 +758,11 @@ declare module '@prismicio/client' {
 			BentoBoxSliceDefaultItem,
 			BentoBoxSliceVariation,
 			BentoBoxSliceDefault,
+			DocumentationSlice,
+			DocumentationSliceDefaultPrimary,
+			DocumentationSliceDefaultItem,
+			DocumentationSliceVariation,
+			DocumentationSliceDefault,
 			FeatureExtractionSlice,
 			FeatureExtractionSliceDefaultPrimary,
 			FeatureExtractionSliceDefaultItem,
@@ -611,6 +772,11 @@ declare module '@prismicio/client' {
 			HeroSliceDefaultPrimary,
 			HeroSliceVariation,
 			HeroSliceDefault,
+			ResultsSlice,
+			ResultsSliceDefaultPrimary,
+			ResultsSliceDefaultItem,
+			ResultsSliceVariation,
+			ResultsSliceDefault,
 			RichTextSlice,
 			RichTextSliceDefaultPrimary,
 			RichTextSliceVariation,

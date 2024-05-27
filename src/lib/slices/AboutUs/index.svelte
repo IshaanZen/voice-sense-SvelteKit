@@ -11,7 +11,7 @@
 
 <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 	
-	<div class="relative text-center">
+	<div class="relative text-center mt-10">
 		<StarGrid/>
 		
 		{#if slice.primary.heading_aboutpage}
@@ -22,42 +22,44 @@
 		{/if}
 
 		{#if slice.primary.content_aboutpage}
-			<p class="mx-auto mt-6 max-w-4xl text-balance  text-gray-400/80  md:4xl">
+			<p class="mx-auto mt-6 max-w-4xl text-balance text-black md:4xl">
 				<PrismicRichText field={slice.primary.content_aboutpage} />
 			</p>
 		{/if}
 
-	</div>
+		<div class=" mt-20 grid gap-20 text-center max-w-5xl">
 
-
-	<div class=" mt-20 grid gap-20 text-center max-w-5xl">
-
-		{#each slice.items as item , index }
-			<div class="relative group grid gap-4 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:gap-8 lg:gap-20 md:grid-cols-2 lg:grid-cols-3 ">
-				<div class="flex col-span-1 flex-col justify-center gap-10">
-					<h3 class="text-3xl max-w-6xl ">
-						<u><PrismicRichText field={item.dev_name} /> </u>
-					</h3>
-
-					<div class="max-w-md">
-						<PrismicRichText field={item.dev_description} />
+			{#each slice.items as item , index }
+				<div class="relative group grid gap-4 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100 md:gap-8 lg:gap-20 md:grid-cols-2 lg:grid-cols-3 ">
+					<div class="flex col-span-1 flex-col justify-center gap-10">
+						<h3 class="text-3xl max-w-6xl ">
+							<u><PrismicRichText field={item.dev_name} /> </u>
+						</h3>
+	
+						<div class="max-w-md">
+							<PrismicRichText field={item.dev_description} />
+						</div>
+					</div>
+	
+					<div class="{clsx('relative lg:col-span-2' , index % 2 && "md:-order-1")}">
+						<div class="image-glow bg-orange-500 -bottom-8 -left-4"></div>
+						<div class="image-glow bg-violet-800 -top-8 -right-4"></div>
+							<PrismicImage field={item.dev_image}
+							 
+							class="z-20 scale-[0.98] rounded-xl transition-transform duration-300 group-hover:scale-100 max-h-[50vh] w-auto"
+							/>
 					</div>
 				</div>
-
-				<div class="{clsx('relative lg:col-span-2' , index % 2 && "md:-order-1")}">
-					<div class="image-glow bg-orange-500 -bottom-8 -left-4"></div>
-					<div class="image-glow bg-violet-800 -top-8 -right-4"></div>
-						<PrismicImage field={item.dev_image}
-						 
-						class="z-20 scale-[0.98] rounded-xl transition-transform duration-300 group-hover:scale-100 max-h-[50vh] w-auto"
-						/>
-				</div>
-			</div>
+				
+			{/each}
+	
 			
-		{/each}
+		</div>
 
-		
 	</div>
+
+
+	
 		
 </Bounded>
 

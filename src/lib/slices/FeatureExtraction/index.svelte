@@ -119,6 +119,7 @@
 
 <Bounded data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
 	
+	<div class="mt-6 relative text-center">
 
 		<StarGrid/>
 
@@ -155,7 +156,7 @@
 				
 				<div class="grid grid-rows-2">
 					
-					{#if audioSrc}
+					{#if audioSrc} 
 				
 						<audio controls src={audioSrc} />
 			
@@ -177,5 +178,7 @@
 				</div>
 			
 		</form>
+	</div>
+
 		
 </Bounded>

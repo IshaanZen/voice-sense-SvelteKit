@@ -15,9 +15,10 @@
 	{...$$restProps}
 	on:click
 	class={clsx(
-		'relative inline-flex h-fit w-fit rounded-full border border-violet-100/20 bg-violet-200/10 px-7 py-2 text-violet-200 outline-none ring-orange-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-orange-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-orange-200/40 hover:text-orange-300 after:hover:bg-opacity-15 focus:ring-2',
+		'relative group inline-flex items-center h-fit w-fit overflow-hidden rounded-full border border-violet-300 bg-violet-50 px-10 py-2 text-black outline-none hover:text-white hover:bg-violet-600 hover:transition-all hover:animate-pulse duration:600 ', 
 		className
 	)}
 >
+
 	<slot />
 </PrismicLink>

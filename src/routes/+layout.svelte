@@ -25,7 +25,6 @@
 		<meta name="twitter:card" content="summary_large_image" />
 	{/if}
 </svelte:head>
-
 <Header settings = {$page.data.settings}/>
 <main>
 	<slot />

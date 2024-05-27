@@ -1,0 +1,26 @@
+{
+	"/": [
+		"src/routes/+layout.server.js"
+	],
+	"/Feature-Record": [
+		"src/routes/Feature-Record/+page.server.ts",
+		"src/routes/+layout.server.js"
+	],
+	"/Percieved-Emotion": [
+		"src/routes/+layout.server.js"
+	],
+	"/api/preview": [
+		"src/routes/api/preview/+server.js"
+	],
+	"/slice-simulator": [
+		"src/routes/+layout.server.js"
+	],
+	"/[[preview=preview]]": [
+		"src/routes/[[preview=preview]]/+page.server.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[[preview=preview]]/[uid]": [
+		"src/routes/[[preview=preview]]/[uid]/+page.server.js",
+		"src/routes/+layout.server.js"
+	]
+}
