@@ -1,0 +1,107 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/Percieved-Emotion",
+			"dest": "/Percieved-Emotion/"
+		},
+		{
+			"src": "/Percieved-Emotion/",
+			"status": 308,
+			"headers": {
+				"Location": "/Percieved-Emotion"
+			}
+		},
+		{
+			"src": "/slice-simulator",
+			"dest": "/slice-simulator/"
+		},
+		{
+			"src": "/slice-simulator/",
+			"status": 308,
+			"headers": {
+				"Location": "/slice-simulator"
+			}
+		},
+		{
+			"src": "/about-us-page",
+			"dest": "/about-us-page/"
+		},
+		{
+			"src": "/about-us-page/",
+			"status": 308,
+			"headers": {
+				"Location": "/about-us-page"
+			}
+		},
+		{
+			"src": "/documentation",
+			"dest": "/documentation/"
+		},
+		{
+			"src": "/documentation/",
+			"status": 308,
+			"headers": {
+				"Location": "/documentation"
+			}
+		},
+		{
+			"src": "/home",
+			"dest": "/home/"
+		},
+		{
+			"src": "/home/",
+			"status": 308,
+			"headers": {
+				"Location": "/home"
+			}
+		},
+		{
+			"src": "/feature-extraction-page",
+			"dest": "/feature-extraction-page/"
+		},
+		{
+			"src": "/feature-extraction-page/",
+			"status": 308,
+			"headers": {
+				"Location": "/feature-extraction-page"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"Percieved-Emotion.html": {
+			"path": "Percieved-Emotion"
+		},
+		"slice-simulator.html": {
+			"path": "slice-simulator"
+		},
+		"index.html": {
+			"path": ""
+		},
+		"about-us-page.html": {
+			"path": "about-us-page"
+		},
+		"documentation.html": {
+			"path": "documentation"
+		},
+		"home.html": {
+			"path": "home"
+		},
+		"feature-extraction-page.html": {
+			"path": "feature-extraction-page"
+		}
+	}
+}

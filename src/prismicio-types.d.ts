@@ -642,14 +642,14 @@ export interface ResultsSliceDefaultPrimary {
  */
 export interface ResultsSliceDefaultItem {
 	/**
-	 * emo_ing field in *Results → Items*
+	 * emo_img field in *Results → Items*
 	 *
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: results.items[].emo_ing
+	 * - **API ID Path**: results.items[].emo_img
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
-	emo_ing: prismic.ImageField<never>;
+	emo_img: prismic.ImageField<never>;
 
 	/**
 	 * emot_name field in *Results → Items*

@@ -1,0 +1,10 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "..\\..\\..\\Major Project - FullStack\\voice-sense-FrontEnd\\.svelte-kit\\vercel-tmp\\index.js",
+	"launcherType": "Nodejs",
+	"experimentalResponseStreaming": true,
+	"framework": {
+		"slug": "sveltekit",
+		"version": "2.5.7"
+	}
+}

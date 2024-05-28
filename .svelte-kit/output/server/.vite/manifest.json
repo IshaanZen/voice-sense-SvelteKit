@@ -1,75 +1,86 @@
 {
   ".svelte-kit/generated/server/internal.js": {
     "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
     "imports": [
       "_internal.js"
-    ],
-    "isEntry": true,
-    "src": ".svelte-kit/generated/server/internal.js"
+    ]
   },
   "_Bounded.js": {
     "file": "chunks/Bounded.js",
+    "name": "Bounded",
     "imports": [
       "_ssr.js"
     ]
   },
   "_Header.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/Header.svelte_svelte_type_style_lang.js",
+    "name": "Header.svelte_svelte_type_style_lang",
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Header.BcnGzjpa.css"
+    ],
     "assets": [
       "_app/immutable/assets/oswald-cyrillic-ext-wght-normal.DbOppiSS.woff2",
       "_app/immutable/assets/oswald-cyrillic-wght-normal.CTOgAtCf.woff2",
       "_app/immutable/assets/oswald-vietnamese-wght-normal.Ce-u7gGO.woff2",
       "_app/immutable/assets/oswald-latin-ext-wght-normal.905GevJw.woff2",
       "_app/immutable/assets/oswald-latin-wght-normal.CuJ2OKNG.woff2"
-    ],
-    "css": [
-      "_app/immutable/assets/Header.BcnGzjpa.css"
-    ],
-    "file": "chunks/Header.svelte_svelte_type_style_lang.js",
-    "imports": [
-      "_ssr.js"
     ]
   },
   "_client.js": {
     "file": "chunks/client.js",
+    "name": "client",
     "imports": [
       "_exports.js"
     ]
   },
   "_exports.js": {
-    "file": "chunks/exports.js"
+    "file": "chunks/exports.js",
+    "name": "exports"
   },
   "_index.js": {
-    "file": "chunks/index.js"
+    "file": "chunks/index.js",
+    "name": "index"
   },
   "_index2.js": {
-    "css": [
-      "_app/immutable/assets/index.DQvbHM0D.css"
-    ],
     "file": "chunks/index2.js",
+    "name": "index",
     "imports": [
       "_ssr.js",
       "_Header.svelte_svelte_type_style_lang.js",
       "_Bounded.js",
       "_client.js"
+    ],
+    "css": [
+      "_app/immutable/assets/index.DQvbHM0D.css"
     ]
   },
   "_internal.js": {
     "file": "chunks/internal.js",
+    "name": "internal",
     "imports": [
       "_ssr.js"
     ]
   },
   "_prismicio.js": {
     "file": "chunks/prismicio.js",
+    "name": "prismicio",
     "imports": [
       "_client.js"
     ]
   },
   "_ssr.js": {
-    "file": "chunks/ssr.js"
+    "file": "chunks/ssr.js",
+    "name": "ssr"
   },
   "_stores.js": {
     "file": "chunks/stores.js",
+    "name": "stores",
     "imports": [
       "_ssr.js",
       "_client.js"
@@ -149,38 +160,56 @@
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js",
       "_stores.js"
-    ],
-    "isEntry": true,
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
     "imports": [
       "_internal.js",
       "_index.js",
       "_exports.js",
       "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+    ]
   },
   "src/params/preview.js": {
     "file": "entries/matchers/preview.js",
-    "isEntry": true,
-    "src": "src/params/preview.js"
+    "name": "entries/matchers/preview",
+    "src": "src/params/preview.js",
+    "isEntry": true
   },
   "src/routes/+layout.server.js": {
     "file": "entries/pages/_layout.server.js",
+    "name": "entries/pages/_layout.server",
+    "src": "src/routes/+layout.server.js",
+    "isEntry": true,
     "imports": [
       "_prismicio.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/+layout.server.js"
+    ]
   },
   "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_Header.svelte_svelte_type_style_lang.js",
+      "_stores.js",
+      "_client.js",
+      "_prismicio.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.LO8hFh3e.css"
+    ],
     "assets": [
       "_app/immutable/assets/dm-sans-latin-ext-wght-normal.D1bw2c55.woff2",
       "_app/immutable/assets/dm-sans-latin-wght-normal.DeBecvsH.woff2",
@@ -195,97 +224,93 @@
       "_app/immutable/assets/russo-one-latin-ext-400-normal.Dr-qY1Ia.woff",
       "_app/immutable/assets/russo-one-latin-400-normal.DqvwhL13.woff2",
       "_app/immutable/assets/russo-one-latin-400-normal.CV3riu6B.woff"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout.CQy0hfep.css"
-    ],
-    "file": "entries/pages/_layout.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Header.svelte_svelte_type_style_lang.js",
-      "_stores.js",
-      "_client.js",
-      "_prismicio.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/+layout.svelte"
+    ]
   },
   "src/routes/Feature-Record/+page.server.ts": {
     "file": "entries/pages/Feature-Record/_page.server.ts.js",
+    "name": "entries/pages/Feature-Record/_page.server.ts",
+    "src": "src/routes/Feature-Record/+page.server.ts",
+    "isEntry": true,
     "imports": [
       "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Feature-Record/+page.server.ts"
+    ]
   },
   "src/routes/Feature-Record/+page.svelte": {
     "file": "entries/pages/Feature-Record/_page.svelte.js",
+    "name": "entries/pages/Feature-Record/_page.svelte",
+    "src": "src/routes/Feature-Record/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js",
       "_client.js",
       "_Bounded.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Feature-Record/+page.svelte"
+    ]
   },
   "src/routes/Percieved-Emotion/+page.svelte": {
     "file": "entries/pages/Percieved-Emotion/_page.svelte.js",
+    "name": "entries/pages/Percieved-Emotion/_page.svelte",
+    "src": "src/routes/Percieved-Emotion/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Percieved-Emotion/+page.svelte"
+    ]
   },
   "src/routes/[[preview=preview]]/+page.server.js": {
     "file": "entries/pages/__preview_preview__/_page.server.js",
+    "name": "entries/pages/__preview_preview__/_page.server",
+    "src": "src/routes/[[preview=preview]]/+page.server.js",
+    "isEntry": true,
     "imports": [
       "_prismicio.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/[[preview=preview]]/+page.server.js"
+    ]
   },
   "src/routes/[[preview=preview]]/+page.svelte": {
     "file": "entries/pages/__preview_preview__/_page.svelte.js",
+    "name": "entries/pages/__preview_preview__/_page.svelte",
+    "src": "src/routes/[[preview=preview]]/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js",
       "_index2.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/[[preview=preview]]/+page.svelte"
+    ]
   },
   "src/routes/[[preview=preview]]/[uid]/+page.server.js": {
     "file": "entries/pages/__preview_preview__/_uid_/_page.server.js",
+    "name": "entries/pages/__preview_preview__/_uid_/_page.server",
+    "src": "src/routes/[[preview=preview]]/[uid]/+page.server.js",
+    "isEntry": true,
     "imports": [
       "_prismicio.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/[[preview=preview]]/[uid]/+page.server.js"
+    ]
   },
   "src/routes/[[preview=preview]]/[uid]/+page.svelte": {
     "file": "entries/pages/__preview_preview__/_uid_/_page.svelte.js",
+    "name": "entries/pages/__preview_preview__/_uid_/_page.svelte",
+    "src": "src/routes/[[preview=preview]]/[uid]/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js",
       "_index2.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/[[preview=preview]]/[uid]/+page.svelte"
+    ]
   },
   "src/routes/api/preview/+server.js": {
     "file": "entries/endpoints/api/preview/_server.js",
+    "name": "entries/endpoints/api/preview/_server",
+    "src": "src/routes/api/preview/+server.js",
+    "isEntry": true,
     "imports": [
       "_client.js",
       "_prismicio.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/api/preview/+server.js"
+    ]
   },
   "src/routes/slice-simulator/+page.svelte": {
     "file": "entries/pages/slice-simulator/_page.svelte.js",
+    "name": "entries/pages/slice-simulator/_page.svelte",
+    "src": "src/routes/slice-simulator/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_ssr.js",
       "_index2.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/slice-simulator/+page.svelte"
+    ]
   }
 }

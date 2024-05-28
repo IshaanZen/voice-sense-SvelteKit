@@ -1,1 +1,0 @@
-{"version":3,"file":"preview-B5dmEu3G.js","sources":["../../../.svelte-kit/adapter-node/entries/matchers/preview.js"],"sourcesContent":["function match(param) {\n  return param === \"preview\";\n}\nexport {\n  match\n};\n"],"names":[],"mappings":"AAAA,SAAS,KAAK,CAAC,KAAK,EAAE;AACtB,EAAE,OAAO,KAAK,KAAK,SAAS,CAAC;AAC7B;;;;"}

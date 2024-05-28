@@ -85,9 +85,9 @@
 		return async ({update , result}) =>{
 			thinking = false;
 			await update();
-
 			// @ts-expect-error
 			contentResult = result.data.result;
+			
 		}
 	}
 	
